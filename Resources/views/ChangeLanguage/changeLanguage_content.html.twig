@@ -2,7 +2,7 @@
 
 {% spaceless %}
 <ul>
-	{% for locale in craue_availableLocales %}
+	{% for locale in craue_availableLocales() %}
 		<li>
 			{%- set craue_language_iscurrent = locale == app.request.locale -%}
 			{%- if craue_language_iscurrent -%}
